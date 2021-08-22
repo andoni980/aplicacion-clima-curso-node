@@ -8,7 +8,6 @@ class Searches {
     dbPath = './DB/database.json'
 
     constructor() {
-        //TODO: lerr DB si existe
         this.readDB();
     }
 
@@ -100,7 +99,6 @@ class Searches {
         }
         this.history = this.history.splice( 0, 5 );
 
-        //TODO: no duplicados
         this.history.unshift( location.toLocaleLowerCase() );
 
         this.saveDB();

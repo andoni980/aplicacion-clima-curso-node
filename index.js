@@ -3,7 +3,6 @@ require( 'dotenv' ).config();
 const { readInput, inquirerMenu, pause, listLocations } = require( "./helpers/inquirer" );
 const Searches = require( "./models/searches" );
 
-// console.log( process.env.MAPBOX_KEY );
 
 const main = async () => {
 
