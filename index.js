@@ -50,12 +50,9 @@ const main = async () => {
                 searches.capitalizedHistory.forEach( ( location, i ) => {
                     const idx = `${ i + 1 }.`.green;
                     console.log( `${ idx } ${ location }` );
-
-
                 } );
 
                 break;
-
         }
 
         if ( opt !== 0 ) await pause();

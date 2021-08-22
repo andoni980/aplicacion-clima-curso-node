@@ -50,8 +50,6 @@ class Searches {
             } );
 
             const resp = await instance.get();
-            // console.log( resp.data.features );
-            // console.log( resp.data.features );
             return resp.data.features.map( location => ( {
                 id: location.id,
                 name: location.place_name,
@@ -62,10 +60,7 @@ class Searches {
         } catch ( error ) {
 
             return [];
-
         }
-
-        // return [];//retorna los lugares que coincidan con la busqueda
     }
 
     async weather ( lat, lon ) {
